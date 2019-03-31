@@ -9,16 +9,26 @@
 
 extern int errno;
 
-operation parse_operations(char* operation) { /* Parse our operations */
-	if (!strcmp(operation, "--addition")) {
+operation parse_operations(char* operation) 
+{ /* Parse our operations */
+	if (!strcmp(operation, "--addition")) 
+	{
 		return addition;
-	} else if (!strcmp(operation, "--multiplication")) {
+	} 
+	else if (!strcmp(operation, "--multiplication")) 
+	{
 		return multiplication;
-	} else if (!strcmp(operation, "--subtraction")) {
+	} 
+	else if (!strcmp(operation, "--subtraction")) 
+	{
 		return subtraction;
-	} else if (!strcmp(operation, "--division")) {
+	} 
+	else if (!strcmp(operation, "--division")) 
+	{
 		return division;
-	} else {
+	} 
+	else 
+	{
 		return neither;
 	}
 
